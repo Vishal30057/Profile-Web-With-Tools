@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <!-- Font Awesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --whatsapp-color: #25D366;
+            --whatsapp-hover: #20bd5a;
+            --email-color: #ea4335;
+            --email-hover: #d33426;
+            --apk-color: #3b82f6;
+            --apk-hover: #2563eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--bg-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: var(--text-primary);
+        }
+
+        .profile-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .avatar-placeholder {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 16px 24px;
+            border-radius: 14px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn i {
+            font-size: 20px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        /* Specific Button Styles */
+        .btn-whatsapp {
+            background-color: var(--whatsapp-color);
+        }
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+        }
+
+        .btn-email {
+            background-color: var(--email-color);
+        }
+        .btn-email:hover {
+            background-color: var(--email-hover);
+        }
+
+        .btn-apk {
+            background-color: var(--apk-color);
+            margin-top: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-apk:hover {
+            background-color: var(--apk-hover);
+        }
+
+        footer {
+            margin-top: 32px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Profile Avatar Icon (You can replace this <div> with an <img> tag) -->
+        <div class="avatar-placeholder">
+            <i class="fas fa-user"></i>
+        </div>
+
+        <!-- Main Title -->
+        <h1>PROFILE</h1>
+        <p class="subtitle">Connect with me or download the official tool below</p>
+
+        <!-- Action Buttons -->
+        <div class="button-group">
+            <!-- WhatsApp Button (Formatted without '+' for wa.me link standard) -->
+            <a href="https://wa.me/94772927241" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WHATSAPP</span>
+            </a>
+
+            <!-- Email Button -->
+            <a href="mailto:varunalu7@gmail.com" class="btn btn-email">
+                <i class="fas fa-envelope"></i>
+                <span>EMAIL</span>
+            </a>
+
+            <!-- Tool APK Download Button -->
+            <a href="https://wzhdownload.web.app/?d=angim4l7ek" target="_blank" rel="noopener noreferrer" class="btn btn-apk">
+                <i class="fas fa-download"></i>
+                <span>TOOL APK HERE</span>
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 All Rights Reserved
+        </footer>
+    </div>
+
+</body>
+</html>
